@@ -6,12 +6,16 @@ public class Main {
         try {
             int result = addArguments(args);
             System.out.println(result);
-        } catch (Exception e) {
-            System.err.println("Please provide three integers to add");
+        } 
+        
+        catch (IllegalArgumentException e) {
+            System.err.println("Invalid argument entered");}
+            catch (ArrayIndexOutOfBoundsException e) {
+                System.err.println("Please provide exactly two integers");   
         }
     }
 
     private static int addArguments(String[] args) {
-        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]) +Integer.valueOf(args[2]);
+        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]) ;
     }
 }
