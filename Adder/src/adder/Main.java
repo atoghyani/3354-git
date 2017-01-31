@@ -15,7 +15,7 @@ public class Main {
         }
     }
 
-    private static int addArguments(String[] args) 
+    private static int addArguments(String[] args) {
     	
     	if (String.valueOf(args[0]).equals( "-"))
     	{
