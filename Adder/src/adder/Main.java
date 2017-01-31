@@ -7,11 +7,18 @@ public class Main {
             int result = addArguments(args);
             System.out.println(result);
         } catch (Exception e) {
-            System.err.println("Please provide three integers to add");
+            System.err.println("Please provide two integers to add");
         }
     }
 
     private static int addArguments(String[] args) {
-        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]) +Integer.valueOf(args[2]);
-    }
+    	
+    	if (String.valueOf(args[0]).equals( "-")){
+    		
+    		return Integer.valueOf(args[1])*-1 + Integer.valueOf(args[2]) *-1;
+    	}
+    	else{
+        return Integer.valueOf(args[1]) + Integer.valueOf(args[2]) ;
+    	}
+    	}
 }
