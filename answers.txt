@@ -1,0 +1,23 @@
+(a) How many commits exist in the repository history after completing step 8 (In- cluding commits made by the original author)?
+	8 commits.
+
+(b) When was the file .gitignore added?
+	Jan. 24,2017  10:28pm
+
+(c) What is the difference between git log and git status?
+
+git status shows the latest changes that have not been commited yet.
+git log lists the commits already made in the repo in reverse order.
+ 
+(d) What is the difference between unstaged and untracked files?
+
+untracked file is a file that was not in the previous snapshot of the repo.
+unstaged file means that it will not be included in the next commmit. so a differnet version of a file might be tracked but unstaged. but all untracked files are also unstaged.
+
+(e) What is the difference between git checkout and git reset?
+
+git reset updates the index, moving the HEAD every time. but a git checkout only moves the head if we checkout of a branch.  
+
+(f) What happens if you try to pull remote changes when there are uncommitted changes in your working directory?
+
+it does not allow us to do so, unless the changes are committed or stashed first.
