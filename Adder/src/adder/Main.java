@@ -11,14 +11,17 @@ public class Main {
         }
     }
 
-    private static int addArguments(String[] args) {
+    private static int addArguments(String[] args) 
+    {
     	
-    	if (String.valueOf(args[0]).equals( "-")){
+    	if (String.valueOf(args[0]).equals( "-"))
+    	{
     		
     		return Integer.valueOf(args[1])*-1 + Integer.valueOf(args[2]) *-1;
     	}
-    	else{
+    	else
+    	{
         return Integer.valueOf(args[1]) + Integer.valueOf(args[2]) ;
     	}
-    	}
+    }
 }
